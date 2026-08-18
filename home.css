@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+header{
+    background-color:#0B1120;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 10px;
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    a:hover{
+        font-size: 1.05rem;
+        transition: 0.2s;
+    }
+
+    img{
+        width: 12rem;
+    }
+    button{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border: none;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: #0A84FF;
+        color: white;
+        border-radius: 25px;
+        cursor: pointer;
+        img{
+            width: 2rem;
+        }
+    }
+    button:hover{
+        transition: 0.2s;
+        background-color: #00AFFF;
+    }
+}
+
+nav.bem-vindo{
+    background-color: #050816;
+    color: white;
+    padding-left: 35px;
+    display: flex;
+    align-items: center;
+
+    .azul{
+        color: #0A84FF;
+        margin-bottom: 20px;
+    }
+
+    p.azul{
+        font-size: 1.2rem;
+    }
+
+    h1{
+        font-size: 3.5rem;
+    }
+
+    section.botoes{
+        display: flex;
+        align-items: center;
+        gap: 8rem;
+        
+        img{
+            width: 2rem;
+            margin: 0;
+        }
+
+        a{
+            text-decoration: none;
+
+            button.explorar{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                border: none;
+                background-color: #00AFFF;
+                color: white;
+                padding: 8px;
+                border-radius: 15px;
+                margin-top: 30px;
+                margin-left: 30px;
+                margin-bottom: 35px;
+                cursor: pointer;
+            }
+            button.explorar:hover{
+                background-color: #0A84FF;
+                transition: 0.2s;
+                font-size: 0.9rem;
+            }
+
+            button.minigameHome{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                border: 0.9px solid #00AFFF;
+                background-color: #050816;
+                color: white;
+                padding: 8px;
+                border-radius: 15px;
+                margin-top: 30px;
+                margin-bottom: 35px;
+                cursor: pointer;
+            }
+            button.minigameHome:hover{
+                background-color: #02156b;
+                transition: 0.2s;
+                font-size: 0.9rem;
+            }
+        }
+    }
+
+    section.dados{
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+
+        div.textoDados{
+            font-size: 15px;
+            width: 180px;
+            text-align: center;
+
+            div.parteAzul{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                color: #0A84FF;
+                font-size: 25px;
+                
+                img{
+                    width: 2rem;
+                }
+            }
+        } 
+    }
+
+    img{
+        width: 40rem;
+        margin-left: 20px;
+    }
+}
