@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Poppins, sans-serif;
+    scroll-behavior: smooth;
 }
 
 header{
@@ -15,10 +16,10 @@ header{
     a{
         text-decoration: none;
         color: white;
+        transition: 0.2s ease;
     }
     a:hover{
         font-size: 1.05rem;
-        transition: 0.2s;
     }
 
     img{
@@ -35,12 +36,12 @@ header{
         color: white;
         border-radius: 25px;
         cursor: pointer;
+        transition: 0.2s ease;
         img{
             width: 2rem;
         }
     }
     button:hover{
-        transition: 0.2s;
         background-color: #00AFFF;
     }
 }
@@ -91,10 +92,10 @@ nav.bem-vindo{
                 margin-left: 30px;
                 margin-bottom: 35px;
                 cursor: pointer;
+                transition: 0.2s ease;
             }
             button.explorar:hover{
                 background-color: #0A84FF;
-                transition: 0.2s;
                 font-size: 0.9rem;
             }
 
@@ -110,10 +111,10 @@ nav.bem-vindo{
                 margin-top: 30px;
                 margin-bottom: 35px;
                 cursor: pointer;
+                transition: 0.2s ease;
             }
             button.minigameHome:hover{
                 background-color: #02156b;
-                transition: 0.2s;
                 font-size: 0.9rem;
             }
         }
@@ -141,11 +142,122 @@ nav.bem-vindo{
                     width: 2rem;
                 }
             }
-        } 
+        }
     }
 
     img{
         width: 40rem;
         margin-left: 20px;
+    }
+}
+
+nav.contHome{
+    background-color: #121A3A;
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 20px;
+    h2{
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+        padding-top: 20px;
+    }
+    p{
+        font-size: 0.9rem;
+    }
+
+    section.contEsquerda{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 50px;
+        margin-left: 100px;
+        margin-right: 100px;
+        gap: 5rem;
+        img{
+            width: 30rem;
+        }
+        div{
+            text-align: left;
+            h3{
+                font-size: 1.5rem;
+                padding-bottom: 10px;
+            }
+            button{
+                margin-top: 15px;
+                padding: 8px;
+                border: none;
+                border-radius: 20px;
+                background-color: #00AFFF;
+                color: white;
+                transition: 0.2s ease;
+                cursor: pointer;
+            }
+            button:hover{
+                background-color: #0A84FF;
+                font-size: 0.9rem;
+            }
+        }
+    }
+
+    section.contDireita{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 50px;
+        margin-left: 100px;
+        margin-right: 100px;
+        gap: 2rem;
+        img{
+            width: 30rem;
+        }
+        div{
+            text-align: left;
+            h3{
+                font-size: 1.5rem;
+                padding-bottom: 10px;
+            }
+            button{
+                margin-top: 15px;
+                padding: 8px;
+                border: none;
+                border-radius: 20px;
+                background-color: #00AFFF;
+                color: white;
+                transition: 0.2s ease;
+                cursor: pointer;
+            }
+            button:hover{
+                background-color: #0A84FF;
+                font-size: 0.9rem;
+            }
+        }
+    }
+}
+
+footer{
+    background-color: #050816;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 20px;
+
+    a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: 20px;
+        width: 40px;
+        border-radius: 50%;
+        transition: 0.2s ease;
+        img{
+            width: 2.5rem;
+        }
+    }
+    a:hover{
+        transform: scale(1.1);
     }
 }
