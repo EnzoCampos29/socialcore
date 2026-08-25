@@ -1,0 +1,438 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+    scroll-behavior: smooth;
+}
+
+    header{
+    background-color:#0B1120;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 10px;
+    a{
+        text-decoration: none;
+        color: white;
+        transition: 0.2s ease;
+    }
+    a:hover{
+        font-size: 1.05rem;
+    }
+
+    img{
+        width: 12rem;
+    }
+    button{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border: none;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: #0A84FF;
+        color: white;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: 0.2s ease;
+        img{
+            width: 2rem;
+        }
+    }
+    button:hover{
+        background-color: #00AFFF;
+    }
+}
+
+body {
+    background-color: #050816;
+    color: white;
+}
+
+body > div:first-of-type {
+    min-height: 520px;
+    width: 760px;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+body > div:first-of-type > h1 {
+    width: 230px;
+    margin: 0;
+    padding-top: 0;
+    text-align: left;
+    font-size: 34px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: white;
+}
+
+#cultural{
+    color: #0A84FF;
+}
+
+.exemplos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+#livros,
+#filmes,
+#musicas {
+    display: inline-block;
+    vertical-align: top;
+    height: 270px;
+    margin-top: 45px;
+    padding-top: 0;
+    text-align: left;
+}
+
+#livros {
+    width: 300px;
+}
+
+#filmes {
+    width: 300px;
+    padding-left: 45px;
+    padding-right: 25px;
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+}
+
+#musicas {
+    width: 300px;
+    padding-left: 45px;
+}
+
+#livros h2,
+#filmes h2,
+#musicas h2 {
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    color: #168cff;
+}
+
+#livros p,
+#filmes p,
+#musicas p {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.45;
+    margin-bottom: 25px;
+    color: white;
+}
+
+#livros-explicacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#livros,
+#filmes,
+#musicas {
+    display: inline-block;
+    vertical-align: top;
+
+    min-height: 270px;
+
+    padding: 0 45px;
+}
+
+#livros-explicacao {
+    width: 100%;
+    min-height: 590px;
+
+    background-color: #111a3a;
+
+    padding: 50px 5.5%;
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto 1fr;
+
+    border-bottom: 1px solid #168cff;
+}
+#livros-explicacao h1 {
+    grid-column: 1 / 3;
+
+    text-align: center;
+
+    font-size: 34px;
+    font-weight: 700;
+
+    margin-bottom: 35px;
+
+    color: #ffffff;
+}
+#livros-explicacao ul {
+    grid-column: 1;
+
+    width: 90%;
+
+    margin: 0;
+
+    padding-left: 25px;
+}
+#livros-explicacao li {
+    width: 100%;
+
+    margin-bottom: 25px;
+
+    color: #ffffff;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    line-height: 1.5;
+}
+#livros-explicacao img {
+    grid-column: 2;
+
+    width: 30rem;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+
+    margin-left: 5%;
+    margin-top: 5px;
+}
+@media (max-width: 700px) {
+
+    #livros-explicacao {
+        display: flex;
+
+        flex-direction: column;
+
+        padding: 40px 30px;
+
+        gap: 25px;
+    }
+
+    #livros-explicacao h1 {
+        font-size: 30px;
+
+        margin-bottom: 10px;
+    }
+
+    #livros-explicacao ul {
+        padding-left: 20px;
+    }
+
+    #livros-explicacao li {
+        font-size: 15px;
+
+        margin-bottom: 25px;
+    }
+
+    #livros-explicacao img {
+        width: 100%;
+        max-width: 100px;
+
+        height: auto;
+
+        margin: 0 auto;
+    }
+}
+
+#filmes-explicacao {
+    width: 100%;
+    min-height: 650px;
+
+    padding: 50px 7% 45px;
+
+    background-color: #111a3a;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-bottom: 1px solid #168cff;
+}
+#filmes-explicacao h1{
+    grid-column: 1 / 3;
+
+    text-align: center;
+
+    font-size: 34px;
+    font-weight: 700;
+
+    margin-bottom: 35px;
+
+    color: #ffffff;
+}
+#filmes-explicacao ul {
+    width: 100%;
+    max-width: 1000px;
+
+    padding-left: 25px;
+
+    margin: 0;
+}
+#filmes-explicacao li {
+    color: #ffffff;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    line-height: 1.5;
+
+    margin-bottom: 25px;
+}
+#filmes-explicacao img {
+    display: block;
+
+    width: 100%;
+    max-width: 500px;
+
+    height: 280px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+
+    margin-top: 5px;
+}
+
+#musicas-explicacao {
+    width: 100%;
+    min-height: 650px;
+
+    padding: 50px 7% 45px;
+
+    background-color: #111a3a;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    grid-template-rows: auto 1fr;
+
+    column-gap: 45px;
+
+    border-top: 1px solid #168cff;
+}
+#musicas-explicacao h1 {
+    grid-column: 1 / 3;
+
+    text-align: center;
+
+    font-size: 34px;
+    font-weight: 700;
+
+    margin-bottom: 35px;
+
+    color: #ffffff;
+}
+#musicas-explicacao ul {
+    grid-column: 1;
+
+    padding-left: 25px;
+
+    margin: 0;
+}
+#musicas-explicacao li {
+    color: #ffffff;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    line-height: 1.5;
+
+    margin-bottom: 25px;
+}
+#musicas-explicacao img {
+    grid-column: 2;
+
+    width: 30rem;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+
+    align-self: start;
+
+    margin-top: 5px;
+}
+
+@media (max-width: 700px) {
+
+    #filmes-explicacao,
+    #musicas-explicacao {
+        display: flex;
+
+        flex-direction: column;
+
+        padding: 40px 30px;
+
+        gap: 25px;
+    }
+
+
+    #filmes-explicacao h1,
+    #musicas-explicacao h1 {
+        font-size: 30px;
+
+        margin-bottom: 10px;
+    }
+
+
+    #filmes-explicacao ul,
+    #musicas-explicacao ul {
+        padding-left: 20px;
+    }
+
+
+    #filmes-explicacao li,
+    #musicas-explicacao li {
+        font-size: 15px;
+
+        margin-bottom: 25px;
+    }
+
+
+    #filmes-explicacao img,
+    #musicas-explicacao img {
+        width: 100%;
+        max-width: 400px;
+
+        height: auto;
+
+        margin: 0 auto;
+    }
+}
+
+
+footer{
+    background-color: #050816;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 20px;
+
+    a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: 20px;
+        width: 40px;
+        border-radius: 50%;
+        transition: 0.2s ease;
+        img{
+            width: 2.5rem;
+        }
+    }
+    a:hover{
+        transform: scale(1.1);
+    }
+}
