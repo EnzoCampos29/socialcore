@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#070b1e">
+<title>edutec — Jogo da Memória</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="jogo.css">
+</head>
+
+<body>
+
+  <header id="header">
+        <img src="./images/logo.png" alt="Logo do site">
+        <a href="index.html">Home</a>
+        <a href="algoritmo.html">Algoritmos das Redes Sociais</a>
+        <a href="bemestar.html">Bem-estar Digital</a>
+        <a href="fake.html">Fake News</a>
+        <a href="repertorio.html">Repertório cultural</a>
+        <a href="jogo.html">
+            <button class="minigame">
+                <img src="./images/controle.png" alt="Controle">
+                <p><strong>Minigame</strong></p>
+            </button>
+        </a>
+    </header>
+
+
+  <main class="page">
+
+    <section class="hero">
+
+      <p class="eyebrow">AS REDES SOCIAIS E SUAS TÉCNOLOGIAS</p>
+
+      <h1>Jogo da <span class="grad">Memória</span></h1>
+
+      <p class="subtitle">
+        Combine os pares e revise, na prática, conceitos sobre redes sociais,
+        algoritmos, bem-estar digital e desinformação.
+      </p>
+
+      <div class="hero-stats">
+        <div><img class="hero-stat-icon" src="images/pares.png" alt="" onerror="this.classList.add('icon-missing')"> <strong id="statPairsTotal">8</strong> pares</div>
+        <div><img class="hero-stat-icon" src="images/niveis.png" alt="" onerror="this.classList.add('icon-missing')"> 3 níveis</div>
+        <div><img class="hero-stat-icon" src="images/tempo.png" alt="" onerror="this.classList.add('icon-missing')"> Sem tempo limite</div>
+      </div>
+
+    </section>
+
+
+    <section class="game-panel">
+
+      <div class="difficulty" role="group" aria-label="Escolher dificuldade">
+        <button class="diff-btn is-selected" data-diff="facil">Fácil · 6 pares</button>
+        <button class="diff-btn" data-diff="medio">Médio · 8 pares</button>
+        <button class="diff-btn" data-diff="dificil">Difícil · 10 pares</button>
+      </div>
+
+      <div class="game-info">
+
+        <div>
+          <span class="label">MOVIMENTOS</span>
+          <strong id="moves">0</strong>
+        </div>
+
+        <div>
+          <span class="label">PARES</span>
+          <strong><span id="pairs">0</span>/<span id="pairsTotal">6</span></strong>
+        </div>
+
+        <div>
+          <span class="label">TEMPO</span>
+          <strong id="time">00:00</strong>
+        </div>
+
+        <div class="best-box">
+          <span class="label">MELHOR RESULTADO</span>
+          <strong id="best">—</strong>
+        </div>
+
+        <button id="restart" class="restart-btn">↻ Reiniciar</button>
+
+      </div>
+
+      <p class="peek-msg" id="peekMsg">Memorize as cartas… o jogo começa em <span id="peekCount">2</span>s</p>
+
+      <div id="board" class="board" aria-label="Jogo da memória"></div>
+
+    </section>
+
+
+    <section id="winMessage" class="win-message hidden">
+
+      <div class="win-icon">✓</div>
+
+      <h2>Parabéns!</h2>
+      <p>Você encontrou todos os pares. Confira seu desempenho:</p>
+
+      <div class="win-stats">
+        <div><span class="label">MOVIMENTOS</span><strong id="winMoves">0</strong></div>
+        <div><span class="label">TEMPO</span><strong id="winTime">00:00</strong></div>
+        <div><span class="label">NÍVEL</span><strong id="winDiff">Fácil</strong></div>
+      </div>
+
+      <div class="stars" id="winStars" aria-label="Avaliação de desempenho">
+        <span>★</span><span>★</span><span>★</span>
+      </div>
+
+      <p class="win-record hidden" id="winRecord"><img class="record-icon" src="images/trofeu.png" alt="" onerror="this.classList.add('icon-missing')"> Novo recorde neste nível!</p>
+
+      <button id="playAgain">Jogar novamente</button>
+
+    </section>
+
+
+    <section class="tips">
+
+      <h2>O que você está revisando?</h2>
+
+      <div class="tip-grid">
+
+        <article>
+          <span class="tip-icon" role="img" aria-label="Algoritmos">🧠</span>
+          <h3>Algoritmos</h3>
+          <p>Como plataformas analisam interações para recomendar conteúdos.</p>
+        </article>
+
+        <article>
+          <span class="tip-icon" role="img" aria-label="Bem-estar digital">🌱</span>
+          <h3>Bem-estar digital</h3>
+          <p>Uso consciente da tecnologia, equilíbrio e qualidade de vida.</p>
+        </article>
+
+        <article>
+          <span class="tip-icon" role="img" aria-label="Fake News">🚫</span>
+          <h3>Fake News</h3>
+          <p>Importância de verificar informações antes de compartilhá-las.</p>
+        </article>
+
+        <article>
+          <span class="tip-icon" role="img" aria-label="Redes sociais">📱</span>
+          <h3>Redes sociais</h3>
+          <p>Impactos das redes sobre comportamento, cultura e comunicação.</p>
+        </article>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+        <p>© 2026 - Como as redes socias moldam a nossa mente</p>
+        <a href="#header">
+            <img src="./images/footer.png" alt="seta">
+        </a>
+    </footer>
+
+  <script src="jogo.js"></script>
+</body>
+</html>
